@@ -6,15 +6,19 @@
   font-family: "Roboto", sans-serif;
   letter-spacing: 0px;
 }
+
 body {
-  padding: 20px 50px;
+  margin: 0;
 }
+
 .page {
   text-align: start;
   width: 784px;
   padding: 50px;
   border: 1px solid #dce2e8;
+  margin: 0;
 }
+
 /* header start*/
 .header {
 }
@@ -180,20 +184,26 @@ body {
 @media all and (max-width: 768px) {
   .page {
     margin: auto;
-    width: 608px;
+    width: 100%;
+    padding: 30px;
   }
   body {
     padding: 50px 20px;
-    margin: auto;
+    width: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media all and (max-width: 320px) {
   .page {
-    width: 288px;
+    width: 100%;
+    padding: 10px;
   }
   body {
     padding: 10px;
     margin: 0;
+    width: 320px;
   }
   .header-ul {
     display: block;
